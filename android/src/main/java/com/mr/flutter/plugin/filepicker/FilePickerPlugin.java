@@ -123,7 +123,7 @@ public class FilePickerPlugin implements MethodCallHandler {
         intent = new Intent(Intent.ACTION_OPEN_DOCUMENT);
       }
 
-      intent.setType("application/pdf");
+      intent.setType("application/audio");
       intent.addCategory(Intent.CATEGORY_OPENABLE);
       instance.activity().startActivityForResult(intent, REQUEST_CODE);
     } else {
